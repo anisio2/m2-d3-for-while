@@ -1,40 +1,28 @@
-// 1 - Crie uma condição que exiba uma mensagem no console se a idade for maior que 18
+//For / While - loop - laços de repetição
+//++ incremento pra somar e acrescentar a condição
+// -- decremento
 
-// 2 - Crie uma condição que exiba uma mensagem no console se você for maior de idade E a condição humana seja true
-
-// 3 - Criar uma condição que exiba uma mensagem no console se você fizer aniversário em Janeiro OU Dezembro
-
-// *** Exercícios bônus
-// 4 - Criar uma condição que exiba uma mensagem no console se seu nome começar com a letra R
-
-// 5 - Criar uma condição que exiba uma mensagem no console se seu sobrenome tenha mais de 6 letras OU seu nome começar com a letra E
-
-let idade = 20
-let humano = "true"
-if (idade > 18){
-    console.log("Você é maior de idade")
-    console.log( "Vc é humano", humano)
-} else{
-    console.log("Rala daqui menor de idade")
+//1 - Criar um loop que conte de 1 até 10 usando FOR
+/*for(entrada; condicao; fim){
+    tarefa a ser executada(entrada)
+}*/
+for(let contagem = 1; contagem <= 10; contagem++ ){
+    console.log(contagem)
 }
 
-let mes = 12 //true
-if ((mes === 12) || (mes === 01)){
-    console.log("Você FAZ aniversário em Dezembro ou Janeiro")
-} else{
-    console.log("Você não faz aniversário nesses meses")
+//2 - Criar um loop que conte de 10 até 1 usando WHILE
+let x = 10;
+while (x >= 1){
+  console.log(x);
+  x--
 }
 
-let nome = "Anisio"
-if(nome.substring(0,1) === "R"){
-    console.log("Seu nome começa com R, parabéns!")
-} else{
-    console.log("Seu nome NÃO começa com R, seu nome é", nome)
+//3 - Criar um loop que conte todos os números ímpares de 1 até 100
+for (let x = 1; x <= 100; x += 2){
+  console.log(x)
 }
 
-let lastName  = "Borba"
-if ((lastName.length > 6) || (lastName.substring(0,1) === "E")){
-    console.log("Seu nome tem mais de 6 letras")
-} else{
-    console.log("Seu nome NÃO tem mais de 6 letras")
+//4- Criar um loop que conte todos os números pares de 0 a 100
+for (let x = 0; x <= 100; x += 2){
+  console.log(x)
 }
